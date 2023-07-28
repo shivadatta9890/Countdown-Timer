@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="icon" type="images" href="https://img.freepik.com/free-photo/hourglass-with-sand-middle-word-sand-it_123827-23414.jpg?size=626&ext=jpg&ga=GA1.2.1254422938.1676360529&semt=sph">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container__title">
+      countdown timer
+    </div>
+    <div class="container__label">
+      <p class="container__label--labels">Hours</p>
+      <p class="container__label--labels">Mins</p>
+      <p class="container__label--labels">secs</p>
+    </div>
+    <div class="container__inputs">
+      <input type="number"
+      class="container--inputs--time hour"    
+      placeholder="00"
+      maxLength="2"
+      oninput="this.value = this.value.slice(0,2)"
+      />
+      <div class="container--colon">:</div>
+      <input type="number"
+      class="container--inputs--time min"    
+      placeholder="00"
+      maxLength="2"
+      oninput="this.value = this.value.slice(0,2)"
+      />
+      <div class="container--colon">:</div>
+      <input type="number"
+      class="container--inputs--time sec"    
+      placeholder="00"
+      maxLength="2"
+      oninput="this.value = this.value.slice(0,2)"
+      />
+    </div>
+   <div class="container--btns">
+    <button class="btn start">start</button>
+    <button class="btn stop">stop</button>
+    <button class="btn reset">reset</button>
+   </div>
+  </div>
+</body>
+</html>
+<script src="index.js"></script>
