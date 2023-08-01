@@ -19,7 +19,7 @@ start.addEventListener('click',()=>{
     startInterval();
 });
 function stopInterval(state){
-start.innerHTML = state === "pause" ? "contnue":"start";
+start.innerHTML = state === "pause" ? "continue":"start";
 stop.style.display="none";
 start.style.display="initial";
 clearInterval(countdown);
